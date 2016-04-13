@@ -1,0 +1,19 @@
+group 'io.github.anvil008.hands'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile files('/libs/leapjava.jar')
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group : 'org.slf4j', name: 'slf4j-simple', version: '1.6.1'
+
+}
